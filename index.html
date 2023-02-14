@@ -1,0 +1,61 @@
+
+<style>
+
+body{
+  text-align: center;
+}
+
+.collapsible {
+  cursor: pointer;
+}
+
+.active, .collapsible:hover {
+}
+
+.content {
+  overflow: hidden;
+  display: none;
+  background-color: #f2f2f2;
+}
+
+a{
+  display: block;
+}
+
+
+</style>
+
+
+
+<body>
+<h1>THE WEBSITE OF JUDE (BALAMUSIA) HENRIETTA SILVERTREE</h1>
+<nav>
+  <a href="about.html">ABOUT</a>
+  <a class="collapsible">WORK</a>
+<div class="content">
+  <a href="graphics.html">GRAPHICS</a>
+  <a href="video.html">VIDEO</a>
+  <a href="newmedia.html">NEW MEDIA</a>
+</div>
+<a href="cv.html">CV</a>
+<a href="contact.html">CONTACT</a>
+
+</nav>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>

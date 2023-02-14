@@ -1,0 +1,101 @@
+<style media="screen">
+
+a{
+  display: inline;
+}
+
+nav{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.collapsible {
+  cursor: pointer;
+}
+
+.active, .collapsible:hover {
+}
+
+.content {
+  overflow: hidden;
+  display: none;
+  background-color: #f2f2f2;
+}
+
+.highlight{
+  background: black;
+  color: white;
+  font-family: monospace;
+}
+
+.entry{
+  font-size: 20px;
+  width: 60%;
+  border: solid;
+  border-width: 2px;
+  border-color: blue;
+  margin: auto;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.i{
+  text-indent: 30px;
+}
+
+
+</style>
+
+<body>
+  <nav>
+    /////<a href="about.html">ABOUT</a> /////
+    <a class="collapsible">WORK</a>
+  <div class="content">
+    <a href="graphics.html">GRAPHICS</a>
+    <a href="video.html">VIDEO</a>
+    <a href="newmedia.html">NEW MEDIA</a>
+  </div> /////
+  <a href="cv.html">CV</a> /////
+  <a href="contact.html">CONTACT</a> /////
+    </nav>
+
+
+
+<div class="entry">
+<h3 class="highlight">EDUCATION</h3>
+<p>2024 // <i>The School of the Art Institute of Chicago</i>, BFA, focus in moving image and new media</p>
+<h3 class="highlight">EXHIBITIONS AND SCREENINGS</h3>
+<p><b>HELLO WORLD</b> (2021) <br> ⊳In Flux, via ExTV at SAIC / Chicago, IL / 2021 <br> ⊳SEFF Binghamton / Binghamton, NY / 2022</p>
+<p><b>Greenhouse Film Festival</b> (2022) <br> ⊳Chicago, IL</p>
+<p><b>Forest Sprite</b> (2022) <br>⊳Sure, Here Ya Go / Comfort Station / Chicago, IL / 2022</p>
+<p><b>Need to Nurture</b> (2022) <br> ⊳ExFEST, via ExTV at SAIC / Chicago, IL / 2022 / <b>2nd place winner</b></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+</body>

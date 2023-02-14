@@ -1,0 +1,128 @@
+<style media="screen">
+
+a{
+  display: inline;
+}
+
+nav{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.collapsible {
+  cursor: pointer;
+}
+
+.active, .collapsible:hover {
+}
+
+.content {
+  overflow: hidden;
+  display: none;
+  background-color: #f2f2f2;
+}
+
+img{
+  width: 100%;
+  margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.gridholder{
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.highlight{
+  background: black;
+  color: white;
+  font-family: monospace;
+}
+
+.entry{
+  font-size: 20px;
+  width: 60%;
+  border: solid;
+  border-width: 2px;
+  border-color: blue;
+  margin: auto;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+
+</style>
+
+<body>
+  <nav>
+    /////<a href="about.html">ABOUT</a> /////
+    <a class="collapsible">WORK</a>
+  <div class="content">
+    <a href="graphics.html">GRAPHICS</a>
+    <a href="video.html">VIDEO</a>
+    <a href="newmedia.html">NEW MEDIA</a>
+  </div> /////
+  <a href="cv.html">CV</a> /////
+  <a href="contact.html">CONTACT</a> /////
+    </nav>
+  <br>
+
+<div class="gridholder">
+  <div class="grid">
+    <div><img src="me1.png" alt="an AI generated image based on Jude Silvertree"></div>
+    <div><img src="me2.png" alt="an AI generated image based on Jude Silvertree"></div>
+    <div><img src="me3.png" alt="an AI generated image based on Jude Silvertree"></div>
+    <div><img src="me4.png" alt="an AI generated image based on Jude Silvertree"></div>
+  </div>
+</div>
+
+<div class="entry">
+<p>my name is <span class="highlight">JUDE HENRIETTA SILVERTREE</span> <br> i also go by the moniker <span class="highlight">BALAMUSIA</span> <br>
+i am an artist based in <span class="highlight">CHICAGO, IL</span> <br> i primarily work in <span class="highlight">DIGITAL IMAGERY, VIDEO,</span> and <span class="highlight">NEW MEDIA</span>
+<br> in my work i explore <span class="highlight">STRUCTURES</span>, including but not limited to the structures of
+<br>
+<br><span class="highlight">OUR RELATIONSHIPS</span>
+  <br><span class="highlight">OUR MINDS</span>
+<br><span class="highlight">OUR LANGUAGES</span>
+<br><span class="highlight">OUR CITIES</span>
+<br><span class="highlight">OUR TECHNOLOGIES</span>
+<br>
+<br>
+here is my ideology: everything is the same</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+</body>
