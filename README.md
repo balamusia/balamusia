@@ -14,3 +14,9 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+my name is jude henrietta silvertree, or yetta, or balamusia
+
+i am currently entering my 4th and final year at the School of the Art Institute of Chicago
+
+i am interested in explo(r/d)ing our current systems of interaction and consumption
